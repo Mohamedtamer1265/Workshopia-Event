@@ -1,0 +1,134 @@
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* globel rules */
+/* small */
+@media (min-width:768px) {
+    .container{
+        width: 720px;
+    }}
+/* medium */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+  
+}
+/* large */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }}
+/* strart cover */
+.cover{
+    min-width: 100%;
+    min-height:100vh ;
+    background-image: url(../images/78877602_162830691753840_298307082392698880_n.jpg);
+    background-size: cover;
+    position: relative;
+}
+.cover .overlay{
+    background-color: rgb(0 0 0 / 20%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cover .index{
+    position: relative;
+}
+.cover .text{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-top:30px ;
+color: black;
+z-index: 5;
+position: relative;
+
+}
+.cover h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.cover h1 .M {
+    color: rgb(0, 158, 231);
+    transition: 0.4s;
+}
+.cover .M:hover{
+    color: yellow;
+    font-size:70px ;
+    }
+.cover h1 .E{
+    transition: 0.4s;
+}
+.cover h1 .E:hover{
+color:yellow ;
+font-size:70px ;
+}
+.cover h1 .S{
+    transition: 0.4s;
+}
+.cover h1 .S:hover{
+    color:yellow ;
+font-size:70px ;
+}
+.cover .text p {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 20px;
+    
+}
+.cover .text p .m{
+    color:rgb(0, 158, 231);
+    font-weight: bold;
+}
+.cover .text p .s{
+color: rgb(0, 158, 231);
+font-weight: bold;
+}
+.cover .text p .e{
+color: rgb(0, 158, 231);
+font-weight: bold;
+}
+
+.cover .text button {
+    background-color: black;
+    position: absolute;
+    bottom: -439px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+.cover .text button:hover{
+    background-color:rgb(0, 158, 231) ;
+}
+.cover .text button a{
+    text-decoration: none;
+    color: rgb(0, 158, 231);
+}
+.cover .text button a:hover{
+    color: black;
+}
+@media (min-width:1125px){
+    .cover .text button{
+        bottom: -50px;
+    }
+}
+
+
